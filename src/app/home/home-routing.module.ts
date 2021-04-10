@@ -21,6 +21,10 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: 'pagina-principal',
+    loadChildren: () => import('./pagina-principal/pagina-principal.module').then( m => m.PaginaPrincipalPageModule)
+  },
  
 ];
 
