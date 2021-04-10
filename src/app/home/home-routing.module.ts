@@ -8,23 +8,24 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
-        path: 'add',
-        loadChildren: () => import('./add/add.module').then( m => m.AddPageModule)
+        path: 'pagina-principal',
+        loadChildren: () => import('./pagina-principal/pagina-principal.module').then( m => m.PaginaPrincipalPageModule)
       },
       {
-        path: 'calendar',
-        loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
+        path: 'calendario',
+        loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
       },
       {
-        path: 'help',
-        loadChildren: () => import('./help/help.module').then( m => m.HelpPageModule)
-      }
-    ]
+        path: 'adicionar',
+        loadChildren: () => import('./adicionar/adicionar.module').then( m => m.AdicionarPageModule)
+      },
+      {
+        path: 'ajuda',
+        loadChildren: () => import('./ajuda/ajuda.module').then( m => m.AjudaPageModule)
+      },
+    ]  
   },
-  {
-    path: 'pagina-principal',
-    loadChildren: () => import('./pagina-principal/pagina-principal.module').then( m => m.PaginaPrincipalPageModule)
-  },
+  
  
 ];
 
