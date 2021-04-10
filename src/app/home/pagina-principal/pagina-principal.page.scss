@@ -1,7 +1,12 @@
 ion-toolbar ion-title img {
-    height: 2.5em;
+    height: 1.5em;
     display: block;
-    width: 2.5em;
+    width: 1.5em;
+  }
+  ion-title{
+    font-size: 20pt;
+    font-weight: bold; 
+    margin: 0; //para alinhar
   }
   
   ion-content {
